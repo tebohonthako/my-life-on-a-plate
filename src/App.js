@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeList from './RecipeList';
 import RecipeDetail from './RecipeDetail';
-import './style.css';
+
+// import './style.css';
 
 const App = () => {
   return (
