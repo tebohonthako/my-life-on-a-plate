@@ -6,17 +6,25 @@ const RecipeList = () => {
   return (
     <div>
       <h1>Recipes List</h1>
-      <ul>
+      <div className="card-deck">
         {recipes.map((recipe) => (
-          <li key={recipe.id}>
-            <Link to={`/recipe/${recipe.id}`}>
-              <h3>{recipe.title}</h3>
-              <img src={recipe.imageUrl} alt={recipe.title} style={{ width: '200px' }} />
-            </Link>
-            <p>{recipe.description}</p>
-          </li>
+          <div key={recipe.id} className="card" style={{ width: '18rem' }}>
+            <img
+              src={recipe.imageUrl}
+              className="card-img-top"
+              alt={recipe.title}
+              style={{ height: '200px', objectFit: 'cover' }}
+            />
+            <div className="card-body">
+              <h5 className="card-title">{recipe.title}</h5>
+              <p className="card-text">{recipe.description}</p>
+              <Link to={`/recipe/${recipe.id}`} className="btn btn-primary">
+                Go to Recipe
+              </Link>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
