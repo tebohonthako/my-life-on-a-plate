@@ -11,6 +11,7 @@ const App = () => {
     <Router>
       <div>
         <h1>Recipes</h1>
+        <hr/>
         <Routes>
           <Route exact path="/" element={<RecipeList />} />
           <Route path="/recipe/:id" element={<RecipeDetail />} />

@@ -116,7 +116,7 @@ const recipes = [
       description: 'This is a rich and flavorful Indian Butter Chicken recipe.',
       ingredients: [
         'For Marinade:',
-        '1 lb (450g) boneless, skinless chicken thighs or breasts, cut into bite-sized pieces',
+        '1 lb (450g) boneless, cut skinless chicken thighs or breasts',
         '1/2 cup plain yogurt',
         '1 tablespoon lemon juice',
         '1 teaspoon garam masala',
@@ -129,7 +129,7 @@ const recipes = [
         '1/2 teaspoon salt',
         '2 cloves garlic, minced',
         '1 tablespoon grated ginger',
-        '',
+         
         'For Sauce:',
         '2 tablespoons ghee or butter',
         '1 large onion, finely chopped',
