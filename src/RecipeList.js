@@ -5,7 +5,7 @@ import recipes from './data';
 const RecipeList = () => {
   return (
     <div>
-      <h1>Recipes List</h1>
+      {/* <h1>Recipes List</h1> */}
       <div className="card-deck">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="card" style={{ width: '18rem' }}>
