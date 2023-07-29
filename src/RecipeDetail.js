@@ -11,24 +11,25 @@ const RecipeDetail = () => {
   }
 
   return (
-    <div>
-      <h2>{recipe.title}</h2>
-      <p>{recipe.description}</p>
-      <h3>Ingredients:</h3>
+    <div className ="recipe-details">
+      <h2 className ="title-recipe" >{recipe.title}</h2>
+      <br/>
+      {recipe.imageUrl && <img src={recipe.imageUrl} alt={recipe.title} className="recipe-picture"/>}
+      <p className='description'>{recipe.description}</p>
+      <h3 className ="ingredients" >Ingredients:</h3>
       <ul>
         {recipe.ingredients.map((ingredient, index) => (
           <li key={index}>{ingredient}</li>
         ))}
       </ul>
-      <h3>Preparation Steps:</h3>
+      <h3 className='steps'>Preparation Steps:</h3>
       <ol>
         {recipe.steps.map((step, index) => (
           <li key={index}>{step}</li>
         ))}
       </ol>
-      {recipe.imageUrl && <img src={recipe.imageUrl} alt={recipe.title} />}
       <br />
-      <Link to="/">Back to Recipes List</Link>
+      <Link className="back-to-recipes" to="/">Back to Recipes List</Link>
     </div>
   );
 };

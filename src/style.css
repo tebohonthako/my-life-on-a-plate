@@ -1,4 +1,10 @@
-
+body {
+    background-image: url('./marble.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    flex: 1 0 auto;
+}
 h1 {
     font-size: 3rem;
     font-family: 'Satisfy', cursive;
@@ -11,41 +17,113 @@ h1 {
 .card-deck{
     width: 80%;
     display: flex;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
-    margin-left: 10rem;
-    font-family: 'Cormorant Garamond', serif;
+    margin-left: 6.7rem;
+    margin-right: 6.7rem;
+    font-family: 'Manrope', sans-serif;
     
-    
-    
+
 }
 .card {
     flex: 1 0 auto;  /* This allows the card to shrink if needed but not grow. */
     margin: 1rem;  /* This sets the margin around the cards. */
     min-width: 200px;  /* This sets the minimum width of the cards. */
     /* Add your specific card styles here. */
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     border: 0rem;  
-    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 15px 27px -7px rgba(0, 0, 0, 0.75);
+    font-family: 'Manrope', sans-serif;
     
+} .card-title {
+    font-weight: bolder;
 }
-.card:hover {
-    background: black;
-    color: white;
+
+.mission {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+    margin: 4rem;
+    font-weight:600;
 }
-.btn {
-    background-color: #393433;
-    color: white;
-    border: #FAF8F6 0rem solid;
-    border-radius: 0.5rem;
+.go-to-recipe {
+    color: black;
+    font-weight: 700;
+}
+.recipe-details {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:3rem;
+    font-family: 'Manrope', sans-serif;
+
+}
+.title-recipe {
+    position: absolute;
+    left: 40rem;
+    top: 9rem;
+}
+.recipe-details > img {
+    margin-top: 5rem;
+    max-width: 35rem;   
+    margin-left: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0px 15px 27px -7px rgba(0, 0, 0, 0.75);
+}
+ .description {
+    margin-top: 2rem;
+    position: absolute;
+    left: 34rem;
+    text-align: center;
+
+
+ }
+ .ingredients {
+    position: absolute;
+    top: 42rem;
+    left: 10rem;
+    margin-top: 2rem;
     
-}
-.btn:hover {
-    color: white;
-    background: grey;
-    border: #FAF8F6;
-    transition: 1ms ease-in-out;
-}
+ } 
+ ul {
+    position:absolute;
+    top: 47rem;
+    left: 10rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-weight: 900;
+    
+ }
+ ol {
+    position: absolute;
+    left: 40rem;
+    top: 47rem;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+  
+ }
+ .steps {
+    position: absolute;
+    top: 42rem;
+    left: 40rem;
+    margin-top: 2rem;
+ }
+ .recipe-picture {
+    display: block;
+    margin: 0 auto;
+ }
+ .back-to-recipes {
+    color:black;
+    position: absolute;
+    left: 40rem;
+    top: 42rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+ }
+ hr {
+    max-width: 10%;
+    display: block;
+    margin: 0 auto;
+ }
