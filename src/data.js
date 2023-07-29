@@ -3,7 +3,7 @@ const recipes = [
   {
     id: 1,
     title: 'Classic Beef Lasagne',
-    description: 'This is a classic beef lasagne recipe.',
+    description: 'This is a classic beef lasagne recipe. Layered in a nice sauce.',
     ingredients: [
         '9 lasagne sheets',
         '1 lb (450g) lean ground beef',
@@ -229,7 +229,7 @@ const recipes = [
     {
       id: 5,
       title: 'Cinnamon Rolls',
-      description: 'These soft and gooey cinnamon rolls are perfect for a sweet breakfast or dessert treat!',
+      description: 'These soft and gooey cinnamon rolls are perfect for a sweet breakfast or dessert!',
       ingredients: [
         '1 cup warm milk (110°F/45°C)',
         '1/2 cup granulated sugar',
