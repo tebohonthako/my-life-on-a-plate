@@ -144,13 +144,30 @@ h1 {
     margin: 0 auto;
  }
  .back-to-recipes {
-    color:black;
+    text-decoration: none;
+    background-color: #3a5a40;
+    color: whitesmoke;
     position: absolute;
-    left: 40rem;
-    top: 42rem;
+    left: 0;
+    top: 0;
     font-weight: bolder;
     padding: 0.5rem;
+    border-radius: 20px 10px 20px 10px;
+    left: 2%; /* 2% from the left edge of the parent element */
+    top: 2%; /* 2% from the top edge of the parent element */
+}
+
+ .back-to-recipes:hover{
+    background-color: #588157;
  }
+ .whatsapp-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 9%; /* 2% from the left edge of the parent element */
+    top: 3%; /* 2% from the top edge of the parent element */
+    
+}
  hr {
     max-width: 10%;
     display: block;
