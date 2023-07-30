@@ -18,8 +18,10 @@ const RecipeList = () => {
             <div className="card-body">
               <h5 className="card-title">{recipe.title}</h5>
               <p className="card-text">{recipe.description}</p>
-              <p className="card-text">{recipe.time}</p>
-              <p className="card-text">{recipe.rating}</p>
+              <div className='time-rating'>
+                <small><p className="card-text">{recipe.time}</p></small>
+                <p className="card-text">{recipe.rating}</p>
+              </div>
               <Link to={`/recipe/${recipe.id}`} className="go-to-recipe">
                 Go to Recipe
               </Link>

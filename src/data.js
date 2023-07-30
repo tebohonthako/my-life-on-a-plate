@@ -57,7 +57,7 @@ const recipes = [
       ],
       imageUrl: 'https://images.pexels.com/photos/6046493/pexels-photo-6046493.jpeg?auto=compress&cs=tinysrgb&w=1600',
       time: '90 minutes', // Total time for the recipe
-      rating: 4.5, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐⭐', // Star rating for the recipe
     },
     // Add more recipe objects as needed...
     {
@@ -112,7 +112,7 @@ const recipes = [
       ],
       imageUrl: 'https://media.istockphoto.com/id/1393961822/photo/mince-filled-vetkoeok.jpg?b=1&s=612x612&w=0&k=20&c=jIHuBqoqrKfjTniVPiYtvU-3tfr6l2Gkl8CEj2yFuyE=',
       time: '60 minutes', // Total time for the recipe
-      rating: 5.0, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐', // Star rating for the recipe
     },
     {
       id: 3,
@@ -183,7 +183,7 @@ const recipes = [
       ],
       imageUrl: 'https://images.pexels.com/photos/12842119/pexels-photo-12842119.jpeg?auto=compress&cs=tinysrgb&w=1600',
       time: '60 minutes', // Total time for the recipe
-      rating: 4.5, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐⭐', // Star rating for the recipe
     },
     {
       id: 4,
@@ -232,7 +232,7 @@ const recipes = [
       ],
       imageUrl: 'https://images.pexels.com/photos/16357830/pexels-photo-16357830/free-photo-of-a-soup-with-mussels-and-shrimps.jpeg?auto=compress&cs=tinysrgb&w=1600',
       time: '40 minutes', // Total time for the recipe
-      rating: 4.8, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐', // Star rating for the recipe
     },
     {
       id: 5,
@@ -294,7 +294,7 @@ const recipes = [
       ],
       imageUrl: 'https://images.pexels.com/photos/351962/pexels-photo-351962.jpeg?auto=compress&cs=tinysrgb&w=1600',
       time: '90 minutes', // Total time for the recipe
-      rating: 5.0, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐⭐', // Star rating for the recipe
     },
     {
       id: 6,
@@ -350,7 +350,7 @@ const recipes = [
       ],
       imageUrl: 'https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1600',
       time: '120 minutes', // Total time for the recipe
-      rating: 5.0, // Star rating for the recipe
+      rating: '⭐⭐⭐⭐', // Star rating for the recipe
     },
   ];
 
