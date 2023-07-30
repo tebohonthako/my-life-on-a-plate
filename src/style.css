@@ -27,17 +27,20 @@ h1 {
 
 }
 .card {
-    flex: 1 0 auto;  /* This allows the card to shrink if needed but not grow. */
-    margin: 1rem;  /* This sets the margin around the cards. */
-    min-width: 200px;  /* This sets the minimum width of the cards. */
-    /* Add your specific card styles here. */
-    background-color: whitesmoke;
+    flex: 1 0 auto;
+    margin: 1rem;
+    min-width: 200px;
+    background-color: #a3b18a;
     color: black;
     border: 0rem;
     box-shadow: 0px 15px 27px -7px rgba(0, 0, 0, 0.75);
+    padding: 50px;
     font-family: 'Manrope', sans-serif;
+    position: relative; /* Add this to make the card a positioning context for the button */
+    margin-bottom: 1rem;
+}
 
-} .card-title {
+.card-title {
     font-weight: bolder;
 }
 
@@ -48,8 +51,27 @@ h1 {
     font-weight:600;
 }
 .go-to-recipe {
-    color: black;
+    margin-bottom: 10px;
+    color: whitesmoke;
     font-weight: 700;
+    border-radius: 20px 15px 15px 10px;
+    background-color: #3a5a40;
+    text-decoration: none;
+    padding: 8px;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Add this to center the button horizontally */
+    transform: translateX(-50%); /* Add this to center the button horizontally */
+    
+}
+.go-to-recipe:hover{
+   background-color:#588157;
 }
 .recipe-details {
     width: 80%;

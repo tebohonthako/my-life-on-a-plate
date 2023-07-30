@@ -23,7 +23,7 @@ const RecipeList = () => {
                 <p className="card-text">{recipe.rating}</p>
               </div>
               <Link to={`/recipe/${recipe.id}`} className="go-to-recipe">
-                Go to Recipe
+                View Recipe
               </Link>
             </div>
           </div>
