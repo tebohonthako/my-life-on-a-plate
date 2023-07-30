@@ -40,10 +40,13 @@ const RecipeDetail = () => {
       <Link className="back-to-recipes" to="/">
         Back to Recipes List
       </Link>
+  
+      <div className='whatsapp-btn'>
           {/* WhatsApp Share Button */}
       <WhatsappShareButton url={getShareUrl()} title={recipe.title}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115' }} />
+        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115'}} />
       </WhatsappShareButton>
+      </div>
     </div>
   );
 };
