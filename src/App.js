@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <h1>Recipes</h1>
+        <h1>My Life On A Plate</h1>
         <hr/>
         <Routes>
           <Route exact path="/" element={<RecipeList />} />
