@@ -2,7 +2,8 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import recipes from './data';
 import { WhatsappShareButton } from 'react-share';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 const RecipeDetail = () => {
   const { id } = useParams();
   const recipe = recipes.find((recipe) => recipe.id === parseInt(id));
@@ -39,9 +40,9 @@ const RecipeDetail = () => {
       <Link className="back-to-recipes" to="/">
         Back to Recipes List
       </Link>
-           {/* WhatsApp Share Button */}
+          {/* WhatsApp Share Button */}
       <WhatsappShareButton url={getShareUrl()} title={recipe.title}>
-        Share on WhatsApp
+        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115' }} />
       </WhatsappShareButton>
     </div>
   );
