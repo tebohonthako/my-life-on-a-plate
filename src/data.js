@@ -237,7 +237,7 @@ const recipes = [
     {
       id: 5,
       title: 'Cinnamon Rolls',
-      description: 'These soft and gooey cinnamon rolls are perfect for a sweet breakfast or dessert!',
+      description: 'These soft cinnamon rolls are perfect for a sweet breakfast or dessert!',
       ingredients: [
         '1 cup warm milk (110°F/45°C)',
         '1/2 cup granulated sugar',
