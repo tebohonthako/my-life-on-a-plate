@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import recipes from './data';
+import './RecipeList.css'
 
 const RecipeList = () => {
   return (

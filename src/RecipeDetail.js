@@ -1,4 +1,5 @@
 import React from 'react';
+import './RecipeDetail.css'
 import { useParams, Link } from 'react-router-dom';
 import recipes from './data';
 import { WhatsappShareButton } from 'react-share';

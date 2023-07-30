@@ -1,0 +1,61 @@
+/* A D D I N G    R E S P O N S I V E N E S S   */
+/* Applied to the RecipeDetail.js file  */
+/* Using media queries  */
+.recipe-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title-recipe {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .ingredients,
+  .steps {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul,
+  ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .back-to-recipes {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    .title-recipe {
+      font-size: 20px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .ingredients,
+    .steps {
+      font-size: 18px;
+    }
+  }
+  
