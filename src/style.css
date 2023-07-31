@@ -82,78 +82,78 @@ h1 {
    background-color:#588157;
 }
 
- .description {
+.description {
 
-    text-align: center;
- }
+  text-align: center;
+}
 
- .title-recipe {
-    text-align: center;
-    font-style: italic;
-    font-weight: 500;
-    margin-bottom: 1rem;
- }
-
- .recipe-details {
-  /* max-width: 800px; */
+.title-recipe {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
   margin-bottom: 1rem;
-  padding: 20px;
-  font-family: 'Manrope', sans-serif;
+}
+
+.recipe-details {
+/* max-width: 800px; */
+margin-bottom: 1rem;
+padding: 20px;
+font-family: 'Manrope', sans-serif;
 }
 
 .recipe-content {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-  box-shadow: #588157 0px 5px 15px;
-  padding: 0.5rem;
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+border-radius: 5px;
+box-shadow: #588157 0px 5px 15px;
+padding: 0.5rem;
 }
 
 .recipe-picture {
-  width: 25rem;
+width: 25rem;
 }
 
 .ingredients-container {
-  flex: 1;
-  padding: 1rem;
-  font-weight: 500;
-  color: #212529;
+flex: 1;
+padding: 1rem;
+font-weight: 500;
+color: #212529;
 }
 
 .steps-container {
-  margin-top: 5rem;
-  /* Adjust the width to control the container size */
+margin-top: 5rem;
+/* Adjust the width to control the container size */
 }
 
 .steps {
-  position: absolute;
-  left: 22rem;
-  font-weight: bolder;
-  margin-bottom: 1rem;
+position: absolute;
+left: 7rem;
+font-weight: bolder;
+margin-bottom: 1rem;
 }
 
 .preparation-steps {
-  margin-top: 2rem; /* Add some spacing between the "Preparation Steps" title and the list */
-  padding-left: 2rem; /* Add padding to align the preparation steps at the start */
-  position: absolute;
-  left: 20rem;
+margin-top: 2rem; /* Add some spacing between the "Preparation Steps" title and the list */
+padding-left: 2rem; /* Add padding to align the preparation steps at the start */
+position: absolute;
+left: 20rem;
 }
+
 
 
 
  .back-to-recipes {
+    margin-bottom: 5rem;
     text-decoration: none;
     background-color: #3a5a40;
     color: whitesmoke;
     position: absolute;
-    left: 0;
-    top: 0;
     font-weight: bolder;
     padding: 0.5rem;
     border-radius: 20px 10px 20px 10px;
     left: 2%; /* 2% from the left edge of the parent element */
-    top: 2%; /* 2% from the top edge of the parent element */
+    top: 10%; /* 2% from the top edge of the parent element */
 }
 
  .back-to-recipes:hover{
@@ -163,18 +163,95 @@ h1 {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 13%;
-  top: 4.5%;
+  left: 50%;
+  bottom: 85%;
+  top: 10%;
 }
 
- hr {
-    max-width: 10%;
-    display: block;
-    margin: 0 auto;
- }
+hr {
+  max-width: 10%;
+  display: block;
+  margin: 0 auto;
+}
 
- .time-rating {
-  display: flex;
-  justify-content: space-between;
- }
- 
+.time-rating {
+display: flex;
+justify-content: space-between;
+}
+
+
+/* ===================== Breakpoints ========================== */
+/* ===================== Medium Devices (e.g., tablets) ========================== */
+@media screen and (max-width: 1024px) {
+  .card-deck {
+    width: 90%; /* Adjust the width to fit better on medium devices */
+    margin-left: 3%; /* Center the card-deck */
+    margin-right: 3%;
+  }
+
+  .card {
+    flex: 1 0 calc(50% - 1rem); /* Display two cards in a row with some spacing */
+  }
+
+  .preparation-steps {
+    left: 50%; /* Center the preparation-steps container */
+    transform: translateX(-50%);
+  }
+}
+
+/* ===================== Small Devices (e.g., mobile phones) ========================== */
+@media screen and (max-width: 600px) {
+  .card-deck {
+    width: 100%; /* Display cards in a single column for small devices */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card {
+    flex: 1 0 100%; /* Make each card take full width in a column */
+    margin: 0.5rem 0; /* Add some spacing between cards */
+  }
+
+  .preparation-steps {
+    left: 0; /* Reset the preparation-steps position to left-align on small devices */
+    transform: none;
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for medium devices (e.g., tablets) */
+
+  .recipe-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ingredients-container {
+    margin-top: 1rem;
+  }
+
+  .steps-container {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for small devices (e.g., mobile phones) */
+
+  .card-deck {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card {
+    flex: 1 0 100%;
+    margin: 0.5rem 0;
+  }
+
+  .preparation-steps {
+    left: 0;
+    transform: none;
+  }
+}
