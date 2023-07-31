@@ -59,7 +59,6 @@ const recipes = [
       time: '90 minutes', // Total time for the recipe
       rating: '⭐⭐⭐⭐⭐', // Star rating for the recipe
     },
-    // Add more recipe objects as needed...
     {
       id: 2,
       title: 'Vetkoek with Curry Mince',
@@ -72,20 +71,15 @@ const recipes = [
         '1 tablespoon sugar',
         '3/4 cup warm milk',
         'Vegetable oil for frying',
-        '',
         'For Curry Mince:',
         '1 lb (450g) ground beef or lamb',
         '1 onion, finely chopped',
         '2 garlic cloves, minced',
-        '1 tablespoon vegetable oil',
         '2 tablespoons curry powder',
-        '1 teaspoon ground cumin',
         '1 teaspoon ground coriander',
         '1 teaspoon paprika',
         '1/2 teaspoon ground turmeric',
         '1 can (14 oz) diced tomatoes',
-        '1 cup beef or vegetable broth',
-        'Salt and pepper to taste',
       ],
       steps: [
         // Step 1: Prepare Vetkoek Dough
@@ -116,73 +110,47 @@ const recipes = [
     },
     {
       id: 3,
-      title: 'Butter Chicken',
-      description: 'This is a rich and flavorful Indian Butter Chicken recipe.',
+      title: 'Egg Fried Rice',
+      description: 'A quick and delicious recipe for homemade egg fried rice. Perfect as a main dish or side!',
       ingredients: [
-        'For Marinade:',
-        '1 lb (450g) boneless, cut skinless chicken thighs or breasts',
-        '1/2 cup plain yogurt',
-        '1 tablespoon lemon juice',
-        '1 teaspoon garam masala',
-        '1 teaspoon ground cumin',
-        '1 teaspoon paprika',
-        '1/2 teaspoon ground turmeric',
-        '1/2 teaspoon chili powder',
-        '1/2 teaspoon ground cinnamon',
-        '1/2 teaspoon ground cardamom',
-        '1/2 teaspoon salt',
+        '3 cups cooked rice (preferably day-old or chilled)',
+        '2 large eggs, beaten',
+        '1 cup frozen mixed vegetables (peas, carrots, corn)',
+        '3 tablespoons soy sauce',
+        '1 tablespoon oyster sauce (optional)',
+        '1 tablespoon sesame oil',
         '2 cloves garlic, minced',
-        '1 tablespoon grated ginger',
-
-        'For Sauce:',
-        '2 tablespoons ghee or butter',
-        '1 large onion, finely chopped',
-        '2 cloves garlic, minced',
-        '1 tablespoon grated ginger',
-        '1 teaspoon ground cumin',
-        '1 teaspoon garam masala',
-        '1 teaspoon paprika',
-        '1/2 teaspoon ground turmeric',
-        '1/2 teaspoon chili powder',
-        '1/2 teaspoon ground cinnamon',
-        '1/2 teaspoon ground cardamom',
-        '1 can (14 oz) diced tomatoes',
-        '1 cup heavy cream or coconut cream',
-        '2 tablespoons tomato paste',
-        '1 tablespoon honey or sugar',
+        '2 green onions, sliced (white and green parts separated)',
+        '2 tablespoons vegetable oil',
         'Salt and pepper to taste',
-        'Fresh cilantro, for garnish',
       ],
       steps: [
-        // Step 1: Marinate the Chicken
-        'In a bowl, combine all the marinade ingredients and mix well.',
-        'Add the chicken pieces to the marinade and coat them evenly.',
-        'Cover the bowl and refrigerate for at least 1 hour (or overnight for best results).',
+        // Step 1: Prepare the Rice
+        "If you don't have cooked rice, cook 1 cup of raw rice according to the package instructions. Let it cool and chill in the refrigerator for at least 1 hour or use day-old rice for best results. Cold rice works better for fried rice as it's less sticky.",
 
-        // Step 2: Cook the Chicken
-        'In a large skillet or pan, heat ghee or butter over medium heat.',
-        'Add the marinated chicken and cook until browned on all sides and cooked through.',
-        'Remove the chicken from the pan and set it aside.',
+        // Step 2: Prepare the Eggs
+        "In a non-stick pan or wok, heat 1 tablespoon of vegetable oil over medium heat. Add the beaten eggs and scramble them until they are just cooked. Remove the scrambled eggs from the pan and set them aside.",
 
-        // Step 3: Prepare the Sauce
-        'In the same pan, add a bit more ghee or butter if needed.',
-        'Sauté the chopped onion, minced garlic, and grated ginger until the onion is soft and translucent.',
-        'Add the ground cumin, garam masala, paprika, turmeric, chili powder, cinnamon, and cardamom. Stir well.',
-        'Add the diced tomatoes, tomato paste, heavy cream or coconut cream, and honey or sugar.',
-        'Simmer the sauce for about 10 minutes, stirring occasionally, until it thickens and the flavors meld.',
-        'Season with salt and pepper to taste.',
+        // Step 3: Stir-Fry the Vegetables
+        "In the same pan, heat the remaining 1 tablespoon of vegetable oil over medium-high heat. Add the minced garlic and sliced white parts of the green onions. Stir-fry for a minute until they become aromatic.",
+        "Add the frozen mixed vegetables and stir-fry for a few minutes until they are cooked and heated through.",
 
-        // Step 4: Finish the Dish
-        'Return the cooked chicken to the pan and stir it into the sauce.',
-        'Simmer the butter chicken for an additional 5 minutes to allow the chicken to absorb the flavors.',
-        'Garnish with fresh cilantro.',
+        // Step 4: Add Rice and Sauces
+        "Add the cooked rice to the pan with the vegetables. Use a spatula to break up any clumps and mix the rice with the vegetables.",
+        "Pour the soy sauce and oyster sauce (if using) over the rice. Stir well to evenly coat the rice with the sauces.",
+        "Add the sesame oil and mix again. The sesame oil adds a wonderful aroma to the fried rice.",
 
-        // Step 5: Serve
-        'Serve hot with steamed rice, naan, or any Indian bread of your choice.',
-        'Enjoy your delicious and creamy Butter Chicken!',
+        // Step 5: Add Scrambled Eggs and Green Onions
+        "Add the previously scrambled eggs back to the pan and toss everything together.",
+        "Mix in the sliced green parts of the green onions, reserving some for garnish.",
+
+        // Step 6: Season and Serve
+        "Taste the fried rice and season with salt and pepper as needed.",
+        "Garnish with the remaining sliced green onions.",
+        "Serve the delicious Egg Fried Rice hot and enjoy as a main dish or side!",
       ],
-      imageUrl: 'https://images.pexels.com/photos/12842119/pexels-photo-12842119.jpeg?auto=compress&cs=tinysrgb&w=1600',
-      time: '60 minutes', // Total time for the recipe
+      imageUrl: 'https://images.immediate.co.uk/production/volatile/sites/2/2015/04/Egg-Fried-Rice-be2087a.jpg?resize=768,574',
+      time: '20 minutes', // Total time for the recipe
       rating: '⭐⭐⭐⭐⭐', // Star rating for the recipe
     },
     {
