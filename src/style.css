@@ -81,69 +81,67 @@ h1 {
 .go-to-recipe:hover{
    background-color:#588157;
 }
-.recipe-details {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    margin:3rem;
-    font-family: 'Manrope', sans-serif;
 
-}
-.title-recipe {
-    position: absolute;
-    left: 52rem;
-    top: 9rem;
-}
-.recipe-details > img {
-    margin-top: 5rem;
-    max-width: 35rem;
-    margin-left: 35rem;
-    border-radius: 1rem;
-    box-shadow: 0px 15px 27px -7px rgba(0, 0, 0, 0.75);
-}
  .description {
-    margin-top: 2rem;
-    position: absolute;
-    left: 46rem;
+
     text-align: center;
-
-
  }
- .ingredients {
-    position: absolute;
-    top: 42rem;
-    left: 10rem;
-    margin-top: 4rem;
 
- }
- ul {
-    position:absolute;
-    top: 47rem;
-    left: 10rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    font-weight: 900;
-
- }
- ol {
-    position: absolute;
-    left: 40rem;
-    top: 47rem;
+ .title-recipe {
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
     margin-bottom: 1rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
+ }
 
- }
- .steps {
-    position: absolute;
-    top: 42rem;
-    left: 40rem;
-    margin-top: 4rem;
- }
- .recipe-picture {
-    display: block;
-    margin: 0 auto;
- }
+ .recipe-details {
+  /* max-width: 800px; */
+  margin-bottom: 1rem;
+  padding: 20px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.recipe-content {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: #588157 0px 5px 15px;
+  padding: 0.5rem;
+}
+
+.recipe-picture {
+  width: 25rem;
+}
+
+.ingredients-container {
+  flex: 1;
+  padding: 1rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+.steps-container {
+  margin-top: 5rem;
+  /* Adjust the width to control the container size */
+}
+
+.steps {
+  position: absolute;
+  left: 22rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.preparation-steps {
+  margin-top: 2rem; /* Add some spacing between the "Preparation Steps" title and the list */
+  padding-left: 2rem; /* Add padding to align the preparation steps at the start */
+  position: absolute;
+  left: 20rem;
+}
+
+
+
  .back-to-recipes {
     text-decoration: none;
     background-color: #3a5a40;
@@ -161,14 +159,14 @@ h1 {
  .back-to-recipes:hover{
     background-color: #588157;
  }
- .whatsapp-btn{
-    position: absolute;
-    left: 0;
-    top: 0;
-    left: 9%; /* 2% from the left edge of the parent element */
-    top: 3%; /* 2% from the top edge of the parent element */
-    
+ .whatsapp-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 13%;
+  top: 4.5%;
 }
+
  hr {
     max-width: 10%;
     display: block;

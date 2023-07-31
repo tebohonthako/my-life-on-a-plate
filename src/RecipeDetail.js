@@ -22,31 +22,38 @@ const RecipeDetail = () => {
   return (
     <div className="recipe-details">
       <h2 className="title-recipe">{recipe.title}</h2>
+            <p className="description">{recipe.description}</p>
+      <div className="recipe-content">
+        {recipe.imageUrl && <img src={recipe.imageUrl} alt={recipe.title} className="recipe-picture" />}
+        <div className="ingredients-container">
+          <h3 className="ingredients">Ingredients:</h3>
+          <ul>
+            {recipe.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <br />
-      {recipe.imageUrl && <img src={recipe.imageUrl} alt={recipe.title} className="recipe-picture" />}
-      <p className="description">{recipe.description}</p>
-      <h3 className="ingredients">Ingredients:</h3>
-      <ul>
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
-        ))}
-      </ul>
-      <h3 className="steps">Preparation Steps:</h3>
-      <ol>
-        {recipe.steps.map((step, index) => (
-          <li key={index}>{step}</li>
-        ))}
-      </ol>
+      <div className="steps-container">
+        <h3 className="steps">Preparation Steps:</h3>
+        <ol className="preparation-steps">
+          {recipe.steps.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ol>
+      </div>
       <br />
       <Link className="back-to-recipes" to="/">
         Back to Recipes List
       </Link>
-  
+
       <div className='whatsapp-btn'>
-          {/* WhatsApp Share Button */}
-      <WhatsappShareButton url={getShareUrl()} title={recipe.title}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115'}} />
-      </WhatsappShareButton>
+        {/* WhatsApp Share Button */}
+        <WhatsappShareButton url={getShareUrl()} title={recipe.title}>
+        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115', fontSize: '2rem', marginRight: '0.5rem' }} />
+        Share via WhatsApp
+        </WhatsappShareButton>
       </div>
     </div>
   );
