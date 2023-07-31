@@ -92,6 +92,11 @@ h1 {
     background-color: #588157;
  }
 
+ .recipe-picture {
+  border-radius: 8px;
+  box-shadow:#212529 0px 5px 15px;
+ }
+
  .row{
   background-image: linear-gradient(to right, #bdc3c7  , #2c3e50);
   box-shadow:#212529 0px 5px 15px;
@@ -102,6 +107,7 @@ h1 {
  .back-to-recipes{
   background-color: #3a5a40;
   margin-bottom: 1rem;
+  border-radius: 20px 15px 15px 10px;
  }
 
  .back-to-recipes:hover{
