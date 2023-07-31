@@ -82,92 +82,34 @@ h1 {
    background-color:#588157;
 }
 
-.description {
-
-  text-align: center;
-}
-
-.title-recipe {
-  text-align: center;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.recipe-details {
-/* max-width: 800px; */
-margin-bottom: 1rem;
-padding: 20px;
-font-family: 'Manrope', sans-serif;
-}
-
-.recipe-content {
-margin-bottom: 20px;
-display: flex;
-justify-content: space-between;
-border-radius: 5px;
-box-shadow: #588157 0px 5px 15px;
-padding: 0.5rem;
-}
-
-.recipe-picture {
-width: 25rem;
-}
-
-.ingredients-container {
-flex: 1;
-padding: 1rem;
-font-weight: 500;
-color: #212529;
-}
-
-.steps-container {
-margin-top: 5rem;
-/* Adjust the width to control the container size */
-}
-
-.steps {
-position: absolute;
-left: 7rem;
-font-weight: bolder;
-margin-bottom: 1rem;
-}
-
-.preparation-steps {
-margin-top: 2rem; /* Add some spacing between the "Preparation Steps" title and the list */
-padding-left: 2rem; /* Add padding to align the preparation steps at the start */
-position: absolute;
-left: 20rem;
-}
-
-
-
-
  .back-to-recipes {
-    margin-bottom: 5rem;
     text-decoration: none;
     background-color: #3a5a40;
     color: whitesmoke;
-    position: absolute;
-    font-weight: bolder;
-    padding: 0.5rem;
-    border-radius: 20px 10px 20px 10px;
-    left: 2%; /* 2% from the left edge of the parent element */
-    top: 10%; /* 2% from the top edge of the parent element */
 }
 
  .back-to-recipes:hover{
     background-color: #588157;
  }
- .whatsapp-btn {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  bottom: 85%;
-  top: 10%;
-}
 
+ .row{
+  background-image: linear-gradient(to right, #bdc3c7  , #2c3e50);
+  box-shadow:#212529 0px 5px 15px;
+  border-radius: 5px;
+  color: aliceblue;
+ }
+
+ .back-to-recipes{
+  background-color: #3a5a40;
+  margin-bottom: 1rem;
+ }
+
+ .back-to-recipes:hover{
+  background-color: #588157;
+}
+.whatsapp-btn{
+  margin-bottom: 1rem;
+}
 hr {
   max-width: 10%;
   display: block;
