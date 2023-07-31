@@ -22,7 +22,7 @@ const RecipeDetail = () => {
   return (
     <div className="recipe-details">
       <h2 className="title-recipe">{recipe.title}</h2>
-            <p className="description">{recipe.description}</p>
+      <p className="description">{recipe.description}</p>
       <div className="recipe-content">
         {recipe.imageUrl && <img src={recipe.imageUrl} alt={recipe.title} className="recipe-picture" />}
         <div className="ingredients-container">
@@ -48,11 +48,11 @@ const RecipeDetail = () => {
         Back to Recipes List
       </Link>
 
-      <div className='whatsapp-btn'>
+      <div className="whatsapp-btn">
         {/* WhatsApp Share Button */}
         <WhatsappShareButton url={getShareUrl()} title={recipe.title}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115', fontSize: '2rem', marginRight: '0.5rem' }} />
-        Share via WhatsApp
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#3dd115', fontSize: '2rem', marginRight: '0.5rem' }} />
+          Share via WhatsApp
         </WhatsappShareButton>
       </div>
     </div>
