@@ -83,14 +83,15 @@ h1 {
 }
 
  .description {
-    margin-top: 2rem;
-    position: absolute;
-    left: 46rem;
+
     text-align: center;
  }
 
  .title-recipe {
     text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 1rem;
  }
 
  .recipe-details {
@@ -116,6 +117,8 @@ h1 {
 .ingredients-container {
   flex: 1;
   padding: 1rem;
+  font-weight: 500;
+  color: #212529;
 }
 
 .steps-container {
@@ -138,20 +141,7 @@ h1 {
 }
 
 
- /* ol {
-   display: flex;
-   flex-direction: column;
- } */
- /* .steps {
-    position: absolute;
-    top: 42rem;
-    left: 40rem;
-    margin-top: 4rem;
- }
- .recipe-picture {
-    display: block;
-    margin: 0 auto;
- } */
+
  .back-to-recipes {
     text-decoration: none;
     background-color: #3a5a40;
@@ -169,14 +159,14 @@ h1 {
  .back-to-recipes:hover{
     background-color: #588157;
  }
- .whatsapp-btn{
-    position: absolute;
-    left: 0;
-    top: 0;
-    left: 9%; /* 2% from the left edge of the parent element */
-    top: 3%; /* 2% from the top edge of the parent element */
-
+ .whatsapp-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 13%;
+  top: 4.5%;
 }
+
  hr {
     max-width: 10%;
     display: block;
